@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>AMNA IQBAL, A PRESENTATION</title>
+
+    <meta property="og:title" content="AMNA IQBAL, A PRESENTATION"/>
+    <meta property="og:type" content="WEBSITE"/>
+    <meta property="og:url" content="amniqb.github.io/progettohtmlcss/"/>
+    <meta property="og:image" content="/img/girlpic.jpg"/>
+
+
+    <link rel="icon" type="image/x-icon" href="/img/favicon.jpg">
+    <link rel="stylesheet" href="sass/main.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "mNzp1aWG7OfkWU7SF",
+      });
+   })();
+</script>
+<script src="js/script.js"></script>
+</head>
+<body>
+
+ <header>
+
+
+    <div class="container row">
+        <nav class="nav">
+            <ul class="navlist">
+                <li class="navitem"><a class="navlink" href="#home">HOME</a></li>
+                <li class="navitem"><a class="navlink" href="#about">ABOUT</a></li>
+                <li class="navitem"><a class="navlink" href="#goals">GOALS</a></li>
+                <li class="navitem"><a class="navlink" href="#contacts">CONTACTS</a></li>
+            </ul>
+        </div>
+        </nav>
+    </div>
+ </header>
+
+    <section class="intro" id="home">
+        <div class="container">
+            <h1 class="title">Hello, I'm Amna Iqbal,<br>
+                a frontend developer in the making </h1>
+            <p class="introtext">Allow me to share my story and goals with you.</p>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="title">Story and Interests</h2>
+            <div class="row">
+                <div class="col">
+                    <p>I was born in Asia but I've spent the majority of my life in Italy, this allowed me to come into contact with
+                        different prespectives and be an open-minded person, fascinated by the diversity of the world. </p>
+                </div>
+                <div class="col">
+                    <p>I've always had a board range of hobbies, these days I partake mostly in knitting and reading. I'm interested in other 
+                        things that allow me to create as well, which is also what makes coding so inspiring to me.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="goals" id="goals">
+        <div class="container row">
+            <div class="col">
+                <h2 class="title">Goals and Skills</h2>
+                <p class="goalstext">Over the last year I came into contact with the world of software development through various friends and I was fascinated
+                    by the way it's in constant evolution and full of endless possibilities. These aspects pushed me to want to learn more about it 
+                    and challenge myself into learning to code. Currently I'm doing so through <a href="https://www.start2impact.it/?utm_source=google&utm_medium=cpc&utm_campaign=Search_Brand&gad_source=1&gclid=Cj0KCQiAouG5BhDBARIsAOc08RRQIo8H8m0Kz_UyhLOL6O6PkHuulp4sfPNXAQZ17MFIKf8aM2_O4qcaAiVHEALw_wcB" target="_blank">
+                        start2impact's master in frontend development.</a></p>
+                    
+                        <p class="goalstext">So far what I've learned in the course includes HTML and CSS languages as well as some of their frameworks such as 
+                    Bootstrap and Sass. My other abilities include being a polyglot and soft skills such as being reliable and creative.
+                </p>
+                
+                
+            </div>
+            <div class="col">
+                <img src="img/girlpic.jpg" alt="a girl on computer in a library">
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <h2 class="title">Contact Me</h2>
+            <div class="row">
+                <div class="col">
+                    <p>Find me on GitHub!  </p>
+                    <div class="githubicon"><a href="https://github.com/amniqb" target="_blank"> 
+                <img src="img/githubicon.webp" alt="github logo"> </a></div></div>
+                <div class="col">
+                    <p>Or send me and email!</p>
+
+                <form>
+                    <div>
+                    <label for="name"></label>
+                    <input class="formtext" type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div>
+                    <label for="email"></label>
+                    <input class="formtext" type="email" id="email" placeholder="Your email" required>
+                </div>
+
+                <textarea
+                class="formtext"
+                id="message"
+                placeholder="Your message"
+                name="message"
+                rows="10"
+                cols="30"
+                required></textarea>
+
+                <div>
+                    <input class="button" type="submit" onclick="sendMail()" value="Sumbit">
+                </div>
+
+                </form>
+        </div>
+    </section>
+</body>
+</html>
+
